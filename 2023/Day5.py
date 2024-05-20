@@ -2,7 +2,7 @@ f = open(r'your file')
 lines = f.read().splitlines()
 f.close()
 
-######################### PART 1 (Not Working) #########################
+######################### PART 1 (Working with the example but not with the file) #########################
 
 tab = []
 for line in lines:
@@ -27,7 +27,7 @@ for k in range(len(seeds)):
             trouve = False
             while tab[j][0].isdigit() and j < len(tab) - 1 and not trouve:
                 number = tab[j].split()
-                if int(number[1]) <= int(goodseed) <= int(number[1]) + int(number[2]):
+                if int(number[1]) <= int(goodseed) < int(number[1]) + int(number[2]):
                     number[2] = str(int(goodseed) - int(number[1]))
                     number[1] = str(int(number[1]) + int(number[2]))
                     number[0] = str(int(number[0]) + int(number[2]))
@@ -37,5 +37,7 @@ for k in range(len(seeds)):
                         break
                 j += 1
     tabfinal.append(goodseed)
+
 print("Part1 : " + str(min(tabfinal)))
+
 
