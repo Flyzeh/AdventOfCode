@@ -16,5 +16,5 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 |------------------|--------|--------|
 | [01](2023/Day1.py) | ✅ | ☑️ |
 | [02](2023/Day2.py) | ✅ | ✅ |
-| [03](2023/Day3.py) | ✅ | ✅ |
+| [03](2023/Day3.py) | ✅ | ✍ |
 | [04](2023/Day4.py) | ✅ | ✅ |
