@@ -1,4 +1,4 @@
-f = open(r'C:\Users\giani\OneDrive\Bureau\AdventOfCode2023\input3.txt')
+f = open(r'your file')
 lines = f.read().splitlines()
 f.close()
 
