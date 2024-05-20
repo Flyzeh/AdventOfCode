@@ -22,7 +22,7 @@ for j in range(len(tab_temps)):
         if k * temps_restants > tab_distance[j]:
             win += 1
     scorefinal *= win
-print(scorefinal)
+print("Part1 : " + str(scorefinal))
 
 ######################### PART 2 #########################
 
@@ -38,4 +38,4 @@ for k in range(tab_number[0]):
     temps_restants = tab_number[0] - k
     if k * temps_restants > tab_number[1]:
         win += 1
-print(win)
+print("Part2 : " + str(win))
