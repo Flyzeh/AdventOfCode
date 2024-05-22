@@ -1,4 +1,4 @@
-# 🐍📅 My Personal Advent of Code solutions
+# 🐍 My Advent of Code solutions 📅
 
 As a personal challenge, I'm trying to solve every Advent of Code problem in Python. 
 
