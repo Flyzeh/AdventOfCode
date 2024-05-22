@@ -9,7 +9,7 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 | ❌     | Problem not attempted yet |
 | ✍     | In Progress |
 | ✅     | Completed |
-| ☑️     | Completed with help of others |
+| ☑️     | Completed with help |
 
 ### 2023 Solutions
 | Day              | Part 1 | Part 2 |
@@ -20,7 +20,7 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 | [04](2023/Day4.py) | ✅ | ✅ |
 | [05](2023/Day5.py) | ✅ | ✍ |
 | [06](2023/Day6.py) | ✅ | ✅ |
-| [07](2023/Day7.py) | ✍ | ❌ |
+| [07](2023/Day7.py) | ☑️ | ✍  |
 | [08](2023/Day8.py) | ❌ | ❌ |
 | [09](2023/Day9.py) | ❌ | ❌ |
 | [10](2023/Day10.py) | ❌ | ❌ |
