@@ -35,36 +35,41 @@ print("Part1 : " + str(score))
 
 scorefinal = 0
 
-######################### PART 2 (Not Work) #########################
+######################### PART 2 #########################
+
 
 for i, line in enumerate(tab):
     deplacement = [(1, 1), (0, -1), (0, 1), (1, 0), (-1, -1), (-1, 0), (-1, 1), (1, -1)]
     for k, j in enumerate(line):
-        score = 0
+        score = []
         number1 = ""
         if j == '*':
+            visited = set()
             for dli, dlc in deplacement:
                 nouvelle_ligne = i + dli
                 nouvelle_colonne = k + dlc
                 number = ""
                 if 0 <= nouvelle_ligne < len(tab) and 0 <= nouvelle_colonne < len(tab):
-                    if tab[nouvelle_ligne][nouvelle_colonne].isdigit():
-                        if tab[nouvelle_ligne][nouvelle_colonne - 2].isdigit():
-                            number += str(tab[nouvelle_ligne][nouvelle_colonne-2])
+                    if tab[nouvelle_ligne][nouvelle_colonne].isdigit() and (nouvelle_ligne, nouvelle_colonne) not in visited:
                         if tab[nouvelle_ligne][nouvelle_colonne - 1].isdigit():
-                            number += str(tab[nouvelle_ligne][nouvelle_colonne - 1])
+                            if tab[nouvelle_ligne][nouvelle_colonne - 2].isdigit():
+                                number += str(tab[nouvelle_ligne][nouvelle_colonne - 2])
+                                visited.add((nouvelle_ligne, nouvelle_colonne-2))
+                                number += str(tab[nouvelle_ligne][nouvelle_colonne - 1])
+                                visited.add((nouvelle_ligne, nouvelle_colonne - 1))
+                            else:
+                                number += str(tab[nouvelle_ligne][nouvelle_colonne - 1])
+                                visited.add((nouvelle_ligne, nouvelle_colonne - 1))
                         number += str(tab[nouvelle_ligne][nouvelle_colonne])
                         if (tab[nouvelle_ligne][nouvelle_colonne + 1]).isdigit():
                             number += str(tab[nouvelle_ligne][nouvelle_colonne + 1])
-                        if (tab[nouvelle_ligne][nouvelle_colonne + 2]).isdigit():
-                            number += str(tab[nouvelle_ligne][nouvelle_colonne + 2])
-                        if number != number1:
-                            score += 1
-                            if score == 1:
-                                number1 = number
-                        print(number)
-            if score == 2:
-                scorefinal += number * number1
-
+                            visited.add((nouvelle_ligne, nouvelle_colonne+1))
+                            if (tab[nouvelle_ligne][nouvelle_colonne + 2]).isdigit():
+                                number += str(tab[nouvelle_ligne][nouvelle_colonne + 2])
+                                visited.add((nouvelle_ligne, nouvelle_colonne+2))
+                        score.append(int(number))
+            print(score)
+            if len(score) == 2:
+                scorefinal += score[0] * score[1]
 
 print("Part2 : " + str(scorefinal))
