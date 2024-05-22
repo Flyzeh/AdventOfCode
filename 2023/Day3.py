@@ -33,11 +33,9 @@ for i, line in enumerate(tab):
         score += int(number)
 print("Part1 : " + str(score))
 
-scorefinal = 0
-
 ######################### PART 2 #########################
 
-
+scorefinal = 0
 for i, line in enumerate(tab):
     deplacement = [(1, 1), (0, -1), (0, 1), (1, 0), (-1, -1), (-1, 0), (-1, 1), (1, -1)]
     for k, j in enumerate(line):
