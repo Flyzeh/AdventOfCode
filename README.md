@@ -32,7 +32,7 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 | [01](2022/Day1) | ✅ | ✅ |
 | [02](2022/Day2) | ✅ | ✅ |
 | [03](2022/Day3) | ✅ | ✅ |
-| [04](2022/Day4) | ✍ | ❌ |
+| [04](2022/Day4) | ✅ | ✍ |
 | [05] | ❌ | ❌ |
 | [06] | ❌ | ❌ |
 | [07] | ❌ | ❌  |
