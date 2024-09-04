@@ -1,6 +1,6 @@
 # 🐍 My Advent of Code solutions 📅
 
-As a personal challenge, I'm trying to solve every Advent of Code problem in Python. 
+As a personal challenge, I'm trying to solve every Advent of Code problem in Python or Java. 
 
 ## Progress Tracking
 
