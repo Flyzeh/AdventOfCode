@@ -34,8 +34,8 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 | [03](2022/Day3) | ✅ | ✅ |
 | [04](2022/Day4) | ✅ | ✅ |
 | [05](2022/Day5) | ✅ | ✅ |
-| [06](2022/Day6) | ✅ | ✍ |
-| [07] | ❌ | ❌  |
+| [06](2022/Day6) | ✅ | ✅ |
+| [07](2022/Day7) | ✍ | ❌  |
 | [08] | ❌ | ❌ |
 | [09] | ❌ | ❌ |
 | [10] | ❌ | ❌ |
