@@ -36,7 +36,7 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 | [05](2022/Day5) | ✅ | ✅ |
 | [06](2022/Day6) | ✅ | ✅ |
 | [07](2022/Day7) | ☑️ | ✅  |
-| [08](2022/Day8) | ✅ | ✍ |
-| [09] | ❌ | ❌ |
+| [08](2022/Day8) | ✅ | ✅ |
+| [09](2022/Day9) | ✍ | ❌ |
 | [10] | ❌ | ❌ |
 | [11] | ❌ | ❌ |
