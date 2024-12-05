@@ -15,11 +15,11 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 ### 2024 Solutions
 | Day              | Part 1 | Part 2 |
 |------------------|--------|--------|
-| [01](2024/Day1) | ✅ | ✅ |
-| [02](2024/Day2) | ✅ | ✅ |
-| [03](2024/Day3) | ✅ | ✅ |
-| [04](2024/Day4) | ✅ | ✅ |
-| [05](2024/Day5) | ✅ | ✅ |
+| [01](2024/Day01) | ✅ | ✅ |
+| [02](2024/Day02) | ✅ | ✅ |
+| [03](2024/Day03) | ✅ | ✅ |
+| [04](2024/Day04) | ✅ | ✅ |
+| [05](2024/Day05) | ✅ | ✅ |
 
 ### 2023 Solutions
 | Day              | Part 1 | Part 2 |
