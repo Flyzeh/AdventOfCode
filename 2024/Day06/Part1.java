@@ -26,42 +26,41 @@ public class Part1 {
             int mvtx = 0;
             int mvty = -1;
             String sens = "haut";
+            boolean sortie = false;
 
 
-            while (depx >= 0 && depy >= 0 && depx < 130 && depy < 130) {
+            while (!sortie) {
 
-                if (depx+mvtx < 0 || depy+mvty < 0 || depx+mvty >= 130 || depy+mvty >= 130) {
-                    break;
-                }
+                if (depx + mvtx < 0 || depy + mvty < 0 || depx + mvty >= 130 || depy + mvty >= 130) {
+                    sortie = true;
+                } else {
+                    if (tab[depx + mvtx][depy + mvty] == '#') {
+                        if (sens.equals("haut")) {
+                            sens = "droite";
+                            mvtx = 1;
+                            mvty = 0;
+                        } else if (sens.equals("droite")) {
+                            sens = "bas";
+                            mvtx = 0;
+                            mvty = 1;
+                        } else if (sens.equals("bas")) {
+                            sens = "gauche";
+                            mvtx = -1;
+                            mvty = 0;
+                        } else if (sens.equals("gauche")) {
+                            sens = "haut";
+                            mvtx = 0;
+                            mvty = -1;
+                        }
+                    } else {
+                        if (tab[depx][depy] != 'P') {
+                            tab[depx][depy] = 'P';
+                            result++;
+                        }
+                        depx += mvtx;
+                        depy += mvty;
 
-                if (tab[depx + mvtx][depy + mvty] == '#') {
-                    if (sens.equals("haut")) {
-                        sens = "droite";
-                        mvtx = 1;
-                        mvty = 0;
-                        System.out.println("cc");
-                    } else if (sens.equals("droite")) {
-                        sens = "bas";
-                        mvtx = 0;
-                        mvty = 1;
-                    } else if (sens.equals("bas")) {
-                        sens = "gauche";
-                        mvtx = -1;
-                        mvty = 0;
-                    } else if (sens.equals("gauche")) {
-                        sens = "haut";
-                        mvtx = 0;
-                        mvty = -1;
                     }
-                }
-                else if (tab[depx + mvtx][depy + mvty] == '.' || tab[depx + mvtx][depy + mvty] == 'P') {
-                    if (tab[depx][depy] != 'P') {
-                        tab[depx][depy] = 'P';
-                        result++;
-                    }
-                    depx += mvtx;
-                    depy += mvty;
-
                 }
             }
 
