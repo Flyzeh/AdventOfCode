@@ -28,12 +28,11 @@ public class Part2 {
             for (int x = 0; x < 130; x++) {
                 for (int y = 0; y < 130; y++) {
                     if (tab[x][y] == '.' && (x != depx || y != depy)) {
-                        tab[x][y] = 'O';
+                        tab[x][y] = '#';
 
                         if (infini(tab, depx, depy)) {
                             result++;
                         }
-
                         tab[x][y] = '.';
                     }
                 }
@@ -50,8 +49,9 @@ public class Part2 {
         int mvtx = 0, mvty = -1;
         int result = 0;
         String sens = "haut";
+        boolean sortie = false;
 
-        while (depx >= 0 && depy >= 0 && depx < 130 && depy < 130) {
+        while (!sortie) {
 
             if (depx+mvtx < 0 || depy+mvty < 0 || depx+mvtx >= 130 || depy+mvty >= 130) {
                 return false;
@@ -60,7 +60,7 @@ public class Part2 {
                 return true;
             }
 
-            if (tab[depx + mvtx][depy + mvty] == '#' || tab[depx + mvtx][depy + mvty] == 'O') {
+            if (tab[depx + mvtx][depy + mvty] == '#') {
                 if (sens.equals("haut")) {
                     sens = "droite";
                     mvtx = 1;
