@@ -29,6 +29,9 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 | [12](2024/Day12) | ✅ | ✅ |
 | [13](2024/Day13) | ✅ | ✅ |
 | [14](2024/Day14) | ✅ | ✅ |
+| [15](2024/Day15) | ✅ | ✅ |
+| [16](2024/Day16) | ✅ | ✅ |
+| [17](2024/Day17) | ✅ | ☑️ |
 
 ### 2023 Solutions
 | Day              | Part 1 | Part 2 |
