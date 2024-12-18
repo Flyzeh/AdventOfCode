@@ -32,6 +32,7 @@ As a personal challenge, I'm trying to solve every Advent of Code problem in Pyt
 | [15](2024/Day15) | ✅ | ✅ |
 | [16](2024/Day16) | ✅ | ✅ |
 | [17](2024/Day17) | ✅ | ☑️ |
+| [18](2024/Day18) | ✅ | ✅ |
 
 ### 2023 Solutions
 | Day              | Part 1 | Part 2 |
